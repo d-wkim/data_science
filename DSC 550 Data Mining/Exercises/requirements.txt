@@ -1,0 +1,8 @@
+pandas
+matplotlib
+openpyxl
+forestplot
+textblob
+scikit-learn
+seaborn
+nltk

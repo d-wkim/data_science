@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: 039656bd-66ba-4fd0-afdd-b0c411820f0b
+  id: 5b1f013c-bae4-4256-9369-a1acdec5729b
   # title:
   # description:
   # keywords: []
@@ -96,6 +96,8 @@ project:
             - file: DSC 540 Data Preparation/Weeks 3 & 4/KIM_DSC_540.ipynb
         - title: Weeks  5 & 6
           children:
+            - file: DSC 540 Data Preparation/Weeks 5 & 6/5.1.ipynb
+            - file: DSC 540 Data Preparation/Weeks 5 & 6/5.3.md
             - file: DSC 540 Data Preparation/Weeks 5 & 6/Activity 5.01.ipynb
             - file: DSC 540 Data Preparation/Weeks 5 & 6/Activity 6.01.ipynb
             - file: DSC 540 Data Preparation/Weeks 5 & 6/KIM_dsc_540_milestone_2.ipynb

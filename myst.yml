@@ -15,7 +15,7 @@ project:
     - title: DSC 530  Data   Exploration  And  Analysis
       children:
         - file: DSC 530 Data Exploration and Analysis/DSC_530_Assignment_Template.ipynb
-        - title: '1'
+        - title: 'Weeks 1 & 2'
           children:
             - file: >-
                 DSC 530 Data Exploration and Analysis/1. Preparing for Exploratory
@@ -30,7 +30,7 @@ project:
                     DSC 530 Data Exploration and Analysis/1. Preparing for
                     Exploratory Data Analysis, Data Manipulation, and
                     Processing/weeks_1_2/Untitled.ipynb
-        - title: '2'
+        - title: 'Weeks 3 & 4'
           children:
             - title: Weeks 3 4
               children:

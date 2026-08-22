@@ -148,34 +148,80 @@ k-nearest neighbors (KNN) classifier.
 ```
 
 ```{code-cell} ipython3
-from sklearn import datasets
-from sklearn.neighbors import NearestNeighbors
-from sklearn.preprocessing import StandardScaler
-
-iris = datasets.load_iris()
-features = iris.data
-```
-
-```{code-cell} ipython3
 import datasets
 from datasets import load_data
 ```
 
 ```{code-cell} ipython3
 import pandas as pd
-work
-url = "https://raw.githubusercontent.com/d-wkim/datasets/refs/heads/main/data/ikdc_subjective.csv"
-df = pd.read_csv(url, encoding = "utf-8")
-df.head()
-```
 
-### Finding an Observation's Nearest Neighbors
+url = "https://raw.githubusercontent.com/d-wkim/data_science/refs/heads/main/datasets/"
+datasets = ["cars", "housing", "loans"]
+
+for dataset in datasets:
+    url = f"https://raw.githubusercontent.com/d-wkim/data_science/refs/heads/main/datasets/data/{dataset}.csv"
+    df = pd.read_csv(url, encoding = "utf-8")
+    globals()[f"{dataset}"] = df
+```
 
 ```{code-cell} ipython3
-
+cars.head()
 ```
 
-### Creating a K-Nearest Neighbors Classifier
+```{code-cell} ipython3
+housing.head()
+```
+
+```{code-cell} ipython3
+loans.head()
+```
+
+### 15. 1 Finding an Observation's Nearest Neighbors
+
++++
+
+Don't be fooled again. 
+
+```{code-cell} ipython3
+from sklearn import datasets
+from sklearn.neighbors import NearestNeighbors as NN
+from sklearn.preprocessing import StandardScaler
+```
+
+```{code-cell} ipython3
+standardizer = StandardScaler
+features_
+```
+
+```{code-cell} ipython3
+def KNN(dataset):
+    import pandas as pd
+    from sklearn.neighbors import NearestNeighbors as NN
+    from sklearn.preprocessing import StandardScaler
+    
+    url = f"https://raw.githubusercontent.com/d-wkim/data_science/refs/heads/main/datasets/data/{dataset}.csv"
+    df = pd.read_csv(url, encoding = "utf-8")
+    df = df.fillna("")
+    features = pd.DataFrame()
+
+    for column in df.columns:
+        if pd.api.types.is_float_dtype(df[column]) or pd.api.types.is_integer_dtype(df[column]):
+            features[column] = df[column]
+
+    scaler = StandardScaler()
+    features_scaled = scaler.fit_transform(features)
+    knn = NN(n_neighbors = 2)
+    knn.fit(features_scaled)
+
+    new = [[1, 1, 1, 1]]
+    new_scaled = scaler.transform(new)
+    
+    distances, indices = knn.kneighbors(new_scaled)
+    neighbors = df.iloc[indices[0]]
+    print(neighbors)
+```
+
+### 15.2 Creating a K-Nearest Neighbors Classifier
 
 ```{code-cell} ipython3
 

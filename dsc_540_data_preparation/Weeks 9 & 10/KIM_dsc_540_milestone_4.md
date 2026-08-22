@@ -25,29 +25,24 @@ Human readable dataset after all transformations should be printed at the end of
 
 ---
 
-What changes were made to the data?
+## Ethical Implications
 
+### What changes were made to the data?
 
+### Are there any legal or regulatory guidelines for your data or project topic?
 
-Are there any legal or regulatory guidelines for your data or project topic?
+### What risks could be created based on the transformations done?
 
+### Did you make any assumptions in cleaning/transforming the data?
 
-
-What risks could be created based on the transformations done?
-
-
-
-Did you make any assumptions in cleaning/transforming the data?
-
-
-
-How was your data sourced/verified for credibility?
-
-
-
+### How was your data sourced/verified for credibility?
 Was your data acquired in an ethical way?
 
+### How would you mitigate any of the ethical implications you have identified?
 
 
-How would you mitigate any of the ethical implications you have identified?
+You can submit a Jupyter Notebook or a PDF of your code. If you submit a .py file you need to also include a PDF or attachment of your results.
 
+Submission Instructions:
+
+Milestone 4 is due by Sunday of 2026-05-25 Week 10, 11:59 p.m. CT.
